@@ -9,9 +9,9 @@ import SwiftUI
 
 struct PokemonView: View {
     @StateObject private var viewModel = PokemonViewModel()
-
+    
     private let gridItems = [GridItem(.flexible()), GridItem(.flexible())]
-
+    
     var body: some View {
         NavigationView {
             ScrollView {

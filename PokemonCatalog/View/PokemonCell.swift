@@ -13,7 +13,7 @@ struct PokemonCell: View {
     var body: some View {
         ZStack {
             VStack(alignment: .leading) {
-                Text(pokemon.name)
+                Text(pokemon.name.capitalized)
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding(.top, 8)
@@ -23,24 +23,27 @@ struct PokemonCell: View {
                     Text(pokemon.type)
                         .font(.subheadline).bold()
                         .foregroundColor(.white)
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 8)
+                        .frame(width: 60, height: 24)
+                        .padding(.horizontal, 6)
+                        .padding(.vertical, 4)
                         .background(Color.white.opacity(0.25))
+
                         .clipShape(RoundedRectangle(cornerRadius: 20))
-                        .fixedSize(horizontal: false, vertical: true)
 
                     AsyncImage(url: URL(string: pokemon.imageUrl)) { image in
                         image.resizable()
-                            .scaledToFit()
                     } placeholder: {
                         ProgressView()
                     }
-                    .frame(width: 68, height: 68)
+                    .scaledToFit()
+                    .frame(width: 65, height: 65)
                     .padding([.bottom, .trailing], 4)
                 }
+                     .padding(.horizontal)
             }
         }
         .background(Color.green)
+        .fixedSize(horizontal: false, vertical: true)
         .cornerRadius(12)
         .shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 2)
     }
