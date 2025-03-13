@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PokemonCell: View {
     let pokemon: PokemonModel
+    let viewmodel: PokemonViewModel
     
     var body: some View {
         ZStack {
@@ -42,7 +43,7 @@ struct PokemonCell: View {
                      .padding(.horizontal)
             }
         }
-        .background(Color.green)
+        .background(Color(viewmodel.backgroundColor(forType: pokemon.type)))
         .fixedSize(horizontal: false, vertical: true)
         .cornerRadius(12)
         .shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 2)
@@ -61,5 +62,5 @@ struct PokemonCell: View {
       height: 4,
     weight: 60 
     
-  ))
+    ), viewmodel: PokemonViewModel())
 }
