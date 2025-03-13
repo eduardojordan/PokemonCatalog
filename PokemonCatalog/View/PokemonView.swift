@@ -25,7 +25,7 @@ struct PokemonView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Pokémon")
+            .navigationTitle("Pokémons")
             .onAppear {
                 viewModel.fetchData()
             }
