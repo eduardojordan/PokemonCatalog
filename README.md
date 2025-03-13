@@ -5,8 +5,9 @@ Pokemon Catalog is a SwiftUI practice project based on the popular Pokémon comi
 <h1 style="font-size: 40px;">📸 Screenshots</h1>
 
 <p align="center">
-  <[img src="your-screenshot-link-1" width="200" hspace="10](https://github.com/eduardojordan/PokemonCatalog/blob/master/1.png?raw=true" width="200)"/>
-   <[img src="your-screenshot-link-1" width="200" hspace="10](https://github.com/eduardojordan/PokemonCatalog/blob/master/2.png?raw=true" width="200)"/>
+  <img src="https://github.com/eduardojordan/PokemonCatalog/blob/master/1.png?raw=true" width="200" hspace="10"/>
+  <img src="https://github.com/eduardojordan/PokemonCatalog/blob/master/2.png?raw=true" width="200" hspace="10"/>
+
 </p>
 
 <h2 style="font-size: 35px;">🚀 Features</h2>
