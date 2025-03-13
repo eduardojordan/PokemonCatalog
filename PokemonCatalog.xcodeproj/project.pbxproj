@@ -66,6 +66,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		183A8A5F2D828071002EBC5D /* Manager */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		186B31CE2D82900B00084FC1 /* Extensions */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		186B31D12D82993C00084FC1 /* HandlerError */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HandlerError;
+			sourceTree = "<group>";
+		};
+		186B31D62D829AC800084FC1 /* Constants */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +144,10 @@
 		183A8A172D813549002EBC5D /* PokemonCatalog */ = {
 			isa = PBXGroup;
 			children = (
+				186B31D62D829AC800084FC1 /* Constants */,
+				186B31D12D82993C00084FC1 /* HandlerError */,
+				186B31CE2D82900B00084FC1 /* Extensions */,
+				183A8A5F2D828071002EBC5D /* Manager */,
 				183A8A1E2D81356D002EBC5D /* Model */,
 				183A8A1D2D813569002EBC5D /* View */,
 				183A8A1C2D813564002EBC5D /* ViewModel */,
@@ -154,6 +178,10 @@
 				183A8A1C2D813564002EBC5D /* ViewModel */,
 				183A8A1D2D813569002EBC5D /* View */,
 				183A8A1E2D81356D002EBC5D /* Model */,
+				183A8A5F2D828071002EBC5D /* Manager */,
+				186B31CE2D82900B00084FC1 /* Extensions */,
+				186B31D12D82993C00084FC1 /* HandlerError */,
+				186B31D62D829AC800084FC1 /* Constants */,
 			);
 			name = PokemonCatalog;
 			packageProductDependencies = (
